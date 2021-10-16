@@ -19,11 +19,11 @@ Guessed
         v=v.strip().lower()[0]
         if (v=='h'):
             if (lower<n):
-                lower=n
+                lower=n+1
             n=random.randint(lower,upper)
         elif (v=='l'):
             if (upper>n):
-                upper=n
+                upper=n-1
             n=random.randint(lower,upper)
         else:
             print('Invalid choice')
